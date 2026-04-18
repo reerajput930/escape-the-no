@@ -47,7 +47,7 @@ export default function SuccessPage() {
         <p className="success-top-emoji">🐱✨</p>
         <h1 className="success-title">noice choice</h1>
         <p className="success-sub">saturday google meet — it's happening bestie 💚</p>
-        <p className="success-heart">u said yes and that's all that matters 🥺🎉</p>
+        {/* <p className="success-heart">u said yes and that's all that matters 🥺🎉</p> */}
         <div className="success-badge">10:00 pm • locked in 🔒</div>
       </div>
     </div>

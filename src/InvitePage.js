@@ -52,7 +52,7 @@ export default function InvitePage({ onSuccess }) {
   const correctTime = '10:00 pm';
   const correctAnswer = 'yes';
 
-  const timeOptions = ['not available', 'not today', '10:00 pm', 'next time'];
+  const timeOptions = ['not available', 'not Saturday', '10:00 pm', 'next time'];
   const answerOptions = ['yes', 'no'];
 
   const bottomState = (() => {
