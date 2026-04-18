@@ -1,0 +1,150 @@
+/* ── Layout ── */
+.invite-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f0eb;
+  padding: 20px;
+}
+
+.invite-card {
+  background: url('./bg.png') center/cover no-repeat;
+  border: 2.5px solid #111;
+  border-radius: 6px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow: 4px 4px 0 #111;
+}
+
+/* ── Sections ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+  border-bottom: 2px solid #111;
+  padding-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+/* ── Buttons ── */
+.choice-btn {
+  padding: 8px 16px;
+  border: 2px solid #111;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+  z-index: 10;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.float-away-btn {
+  position: relative;
+  z-index: 10;
+}
+
+.correct-btn:hover {
+  background: #f0f0f0;
+}
+
+.correct-btn.selected {
+  background: #111;
+  color: #fff;
+}
+
+/* ── Greeting ── */
+.greeting-text {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  border-bottom: 2px solid #111;
+  padding-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.question-text {
+  font-size: 15px;
+  margin: 0;
+  border-bottom: 2px solid #111;
+  padding-bottom: 2px;
+  align-self: flex-start;
+}
+
+/* ── Bottom Block ── */
+.bottom-block {
+  min-height: 160px;
+  border: 2.5px solid #111;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  transition: background-image 0.3s;
+}
+
+.block-msg {
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 6px;
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.bad-msg {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.good-msg {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* ── Proceed ── */
+.proceed-btn {
+  padding: 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+.proceed-btn:hover {
+  opacity: 0.85;
+}

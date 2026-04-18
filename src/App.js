@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import InvitePage from './InvitePage';
+import SuccessPage from './SuccessPage';
 
 function App() {
+  const [success, setSuccess] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      {success ? <SuccessPage /> : <InvitePage onSuccess={() => setSuccess(true)} />}
     </div>
   );
 }
